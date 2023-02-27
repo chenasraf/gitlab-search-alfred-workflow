@@ -210,7 +210,7 @@
       </dict>
     </array>
     <key>readme</key>
-    <string># GitLab Projects Search
+    <string># GitLab Projects Search Alfred Workflow
 
 ## How to use
 
@@ -226,7 +226,10 @@ Use this if there are new projects that do not appear in results, or user/group 
 
 ## Requirements
 
-Needs a [GitLab personal access token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) to work</string>
+- Needs a
+  [GitLab personal access token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
+  to work
+- Needs [jq](https://stedolan.github.io/jq/download/) to be installed</string>
     <key>uidata</key>
     <dict>
       <key>37095F59-E46C-4BB6-A6C9-5545F50E5F82</key>
@@ -310,8 +313,6 @@ Needs a [GitLab personal access token](https://docs.gitlab.com/ee/user/profile/p
         <string>GROUP</string>
       </dict>
     </array>
-    <key>variablesdontexport</key>
-    <array/>
     <key>version</key>
     <string>1.0.0</string>
     <key>webaddress</key>
