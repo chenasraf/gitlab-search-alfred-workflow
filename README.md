@@ -2,7 +2,10 @@
 
 ## How to use
 
-Type `gl` and then the name of a project (2 chars min).
+Use these commands with your search query as the arguments (min 3 chars for search):
+
+- `gl <search>` - open a project overview
+- `gp <search>` - open project pipelines page
 
 Confirm a result to open it on your default browser.
 
