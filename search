@@ -3,6 +3,8 @@
 API_BASE="https://gitlab.com/api/v4"
 SCOPE="groups"
 ID="$GROUP"
+SUB="$2"
+SUB_DESC="${3:-Project}"
 
 if [[ -z "$GROUP" ]]; then
   SCOPE="users"
@@ -26,5 +28,8 @@ else
     curl $url >$fl
   fi
 
-  jq 'map({title: ["Open Project: ",.path] | join(""), subtitle: .path_with_namespace, arg:.web_url}) | {items:.}' $fl
+  url_build=$([[ -z "$SUB" ]] && echo ".web_url" || echo '([.web_url, "/-/'$SUB'"] | join(""))')
+  jquery='map({title: (["Open '$SUB_DESC': ",.path] | join("")), subtitle: .path_with_namespace, arg:'$url_build'}) | {items:.}'
+
+  jq "$jquery" $fl
 fi
