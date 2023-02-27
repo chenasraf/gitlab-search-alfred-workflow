@@ -1,4 +1,4 @@
-# GitLab Projects Search
+# GitLab Projects Search Alfred Workflow
 
 ## How to use
 
@@ -14,6 +14,7 @@ Use this if there are new projects that do not appear in results, or user/group 
 
 ## Requirements
 
-Needs a
-[GitLab personal access token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
-to work
+- Needs a
+  [GitLab personal access token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
+  to work
+- Needs [jq](https://stedolan.github.io/jq/download/) to be installed
