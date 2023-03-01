@@ -4,8 +4,9 @@
 
 Use these commands with your search query as the arguments (min 3 chars for search):
 
-- `gl <search>` - open a project overview
-- `gp <search>` - open project pipelines page
+- `gl <search>` - open a project's overview
+- `glp <search>` - open project's Pipelines page
+- `glm <search>` - open project's MRs page
 
 Confirm a result to open it on your default browser.
 
