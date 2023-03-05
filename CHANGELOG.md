@@ -1,3 +1,8 @@
+# 1.2.1
+
+- Projects cache uses week number
+- backup user ID to file to save on requests
+
 # 1.2.0
 
 - Rename `gp` to `glp`
