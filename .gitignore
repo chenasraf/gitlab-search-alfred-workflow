@@ -1,4 +1,4 @@
 .cache/
 .DS_Store
 prefs.plist
-.cache
+log.txt
