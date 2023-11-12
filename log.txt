@@ -1,4 +1,0 @@
-Query: compon, Hash: b141f617110529560a69ffb63f881cc5
-Cache file: .cache/projects-b141f617110529560a69ffb63f881cc5.json
-Processing results
-Sending Result: map({title: (["Open Pipeline: ",.path] | join("")), subtitle: .path_with_namespace, arg:([.web_url, "/-/pipelines"] | join(""))}) | {items:.}
