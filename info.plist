@@ -483,6 +483,8 @@ Use this if there are new projects that do not appear in results, or user/group 
 			<string>GROUP</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>1.2.1</string>
 	<key>webaddress</key>

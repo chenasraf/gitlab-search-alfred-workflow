@@ -1,6 +1,6 @@
 # 1.2.1
 
-- Projects cache uses week number
+- Delete cache files older than 1 week
 - backup user ID to file to save on requests
 
 # 1.2.0
