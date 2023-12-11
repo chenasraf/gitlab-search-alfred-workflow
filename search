@@ -11,7 +11,8 @@ SUFFIX="$2"
 URL_DESC="${3:-Project}"
 
 log() {
-  echo "$@" >> log.txt
+  fdate=$(date "+%Y-%m-%d %H:%M:%S")
+  echo "[$fdate] $*" >> log.txt
 }
 
 if [[ -z "$GROUP" ]]; then
@@ -33,13 +34,11 @@ else
     mkdir .cache
   fi
 
-  # remove files older than 1 week
-  find .cache -type f -mtime +7 -name '*.json' -exec rm {} \;
+  # remove files older than 30 days
+  find .cache -type f -mtime +30 -name '*.json' -exec rm {} \;
 
   query=$1
   hash=$(echo "$query" | md5 -q)
-
-  log "Query: $query, Hash: $hash"
 
   log "Query: $query, Hash: $hash"
 
